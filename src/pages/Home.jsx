@@ -13,7 +13,6 @@ import SearchBar from "./../shared/SearchBar";
 import ServiceList from "./../services/ServiceList";
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
 
-
 const Home = () => {
   return (
     <>
@@ -126,6 +125,21 @@ const Home = () => {
         </Container>
       </section>
       {/* --------------- Experience section end  --------------- */}
+
+      {/* --------------- Gallery section Start  --------------- */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle subtitle={"Gallery"} />
+              <h2 className="gallery_title"> Visit Our customers tour Gallery  </h2>
+            </Col>
+            <Col lg="12">
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      {/* --------------- Gallery section End  --------------- */}
     </>
   );
 };
