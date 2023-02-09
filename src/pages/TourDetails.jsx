@@ -1,12 +1,13 @@
 import React, { useRef, useState } from "react";
-import "../styles/tour-details.css";
-import { Col, Container, Row, Form, ListGroup } from "reactstrap";
 import { useParams } from "react-router-dom";
-import Booking from './../components/Booking/Booking';
+import { Col, Container, Form, ListGroup, Row } from "reactstrap";
+import "../styles/tour-details.css";
+import Booking from "./../components/Booking/Booking";
 
 import tourData from "../assets/data/tours";
-import calculateAvaRating from "../utils/avgRating";
 import avatar from "../assets/images/avatar.jpg";
+import calculateAvaRating from "../utils/avgRating";
+import Newsletter from './../shared/Newsletter';
 
 const TourDetails = () => {
   const { id } = useParams();
@@ -26,10 +27,10 @@ const TourDetails = () => {
     maxGroupSize,
   } = tour;
   const { totalRating, avgRating } = calculateAvaRating(reviews);
-  
+
   // date
   const options = { day: "numeric", month: "long", year: "numeric" };
-  
+
   // submit
   const submitHandler = (e) => {
     e.preventDefault();
@@ -52,8 +53,8 @@ const TourDetails = () => {
                   <div className="d-flex align-items-center gap-5">
                     <span className="tour__rating d-flex align-items-center gap-1">
                       <i
-                        class="ri-star-fill"
-                        style={{ color: "var(--secondary-color)" }}
+                        className="ri-star-fill"
+                        style={{ color: "var(--secondary-color" }}
                       ></i>
                       {avgRating === 0 ? null : avgRating}
                       {totalRating === 0 ? (
@@ -64,26 +65,26 @@ const TourDetails = () => {
                     </span>
 
                     <span>
-                      <i class="ri-map-pin-user-fill"></i>
+                      <i className="ri-map-pin-user-fill"></i>
                       {address}
                     </span>
                   </div>
 
                   <div className="tour__extra-details">
                     <span>
-                      <i class="ri-map-pin-2-line"></i>
+                      <i className="ri-map-pin-2-line"></i>
                       {city}
                     </span>
                     <span>
-                      <i class="ri-money-dollar-circle-line"></i>
+                      <i className="ri-money-dollar-circle-line"></i>
                       {price} /per person
                     </span>
                     <span>
-                      <i class="ri-map-pin-time-line"></i>
+                      <i className="ri-map-pin-time-line"></i>
                       {distance} k/m
                     </span>
                     <span>
-                      <i class="ri-group-line"></i>
+                      <i className="ri-group-line"></i>
                       {maxGroupSize} people
                     </span>
                   </div>
@@ -99,19 +100,19 @@ const TourDetails = () => {
                   <Form onSubmit={submitHandler}>
                     <div className="rating__group d-flex align-items-center gap-3 mb-4">
                       <span onClick={() => setTourRating(1)}>
-                        1 <i class="ri-star-s-fill"></i>
+                        1 <i className="ri-star-s-fill"></i>
                       </span>
                       <span onClick={() => setTourRating(2)}>
-                        2 <i class="ri-star-s-fill"></i>{" "}
+                        2 <i className="ri-star-s-fill"></i>{" "}
                       </span>
                       <span onClick={() => setTourRating(3)}>
-                        3 <i class="ri-star-s-fill"></i>{" "}
+                        3 <i className="ri-star-s-fill"></i>{" "}
                       </span>
                       <span onClick={() => setTourRating(4)}>
-                        4 <i class="ri-star-s-fill"></i>{" "}
+                        4 <i className="ri-star-s-fill"></i>{" "}
                       </span>
                       <span onClick={() => setTourRating(5)}>
-                        5 <i class="ri-star-s-fill"></i>{" "}
+                        5 <i className="ri-star-s-fill"></i>{" "}
                       </span>
                     </div>
                     <div className="review__input">
@@ -128,8 +129,8 @@ const TourDetails = () => {
                   </Form>
 
                   <ListGroup className="user__reviews">
-                    {reviews?.map((review) => (
-                      <div className="review__item">
+                    {reviews?.map((review, index) => (
+                      <div className="review__item" key={index}>
                         <img src={avatar} alt="avatar" />
 
                         <div className="w-100">
@@ -144,7 +145,7 @@ const TourDetails = () => {
                               </p>
                             </div>
                             <span className="d-flex align-items-center">
-                              5<i class="ri-star-s-fill"></i>
+                              5<i className="ri-star-s-fill"></i>
                             </span>
                           </div>
 
@@ -158,12 +159,13 @@ const TourDetails = () => {
               </div>
             </Col>
 
-            <Col lg='4'>
-            <Booking tour={tour} avgRating={avgRating} />
+            <Col lg="4">
+              <Booking tour={tour} avgRating={avgRating} />
             </Col>
           </Row>
         </Container>
       </section>
+      <Newsletter></Newsletter>
     </>
   );
 };

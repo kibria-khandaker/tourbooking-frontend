@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Button, Container, Row } from "reactstrap";
 import logo from "../../assets/images/logo.png";
@@ -82,7 +82,7 @@ const Header = () => {
                 </Button>
               </div>
               <span className=" mobile__menu">
-                <i class="ri-menu-line"></i>
+                <i className="ri-menu-line"></i>
               </span>
             </div>
           </div>
