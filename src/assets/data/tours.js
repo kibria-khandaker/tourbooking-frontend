@@ -12,9 +12,10 @@ const tours = [
     title: "Westminister Bridge",
     city: "London",
     distance: 300,
+    address:"UK Address",
     price: 99,
     maxGroupSize: 10,
-    desc: "this is the description",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto adipisci quidem possimus eos impedit amet voluptatem quisquam iste sed voluptatibus quae ad eum numquam, aspernatur eaque! Esse ad repellat quae!",
     reviews: [
       {
         name: "jhon doe",
@@ -27,12 +28,13 @@ const tours = [
   },
   {
     id: "02",
-    title: "Bali, Indonesia",
-    city: "Indonesia",
+    title: "Balia, Qatar",
+    city: "Qatar",
     distance: 400,
+    address:"Qatar Address",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto adipisci quidem possimus eos impedit amet voluptatem quisquam iste sed voluptatibus quae ad eum numquam, aspernatur eaque! Esse ad repellat quae!",
     reviews: [
       {
         name: "jhon doe",
@@ -45,12 +47,13 @@ const tours = [
   },
   {
     id: "03",
-    title: "Snowy Mountains, Thailand",
-    city: "Thailand",
+    title: "Snowy Mountains, Sweden",
+    city: "Sweden",
     distance: 500,
+    address:"Sweden Address",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto adipisci quidem possimus eos impedit amet voluptatem quisquam iste sed voluptatibus quae ad eum numquam, aspernatur eaque! Esse ad repellat quae!",
     reviews: [
       {
         name: "jhon doe",
@@ -63,12 +66,13 @@ const tours = [
   },
   {
     id: "04",
-    title: "Beautiful Sunrise, Thailand",
-    city: "Thailand",
+    title: "Beautiful Sunrise, Brazil",
+    city: "Brazil",
     distance: 500,
+    address:"BRA-Address",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto adipisci quidem possimus eos impedit amet voluptatem quisquam iste sed voluptatibus quae ad eum numquam, aspernatur eaque! Esse ad repellat quae!",
     reviews: [
       {
         name: "jhon doe",
@@ -81,12 +85,13 @@ const tours = [
   },
   {
     id: "05",
-    title: "Nusa Pendia Bali, Indonesia",
-    city: "Indonesia",
+    title: "Nusa Pendia Bali, China",
+    city: "China",
     distance: 500,
+    address:"CHI Address",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto adipisci quidem possimus eos impedit amet voluptatem quisquam iste sed voluptatibus quae ad eum numquam, aspernatur eaque! Esse ad repellat quae!",
     reviews: [
       {
         name: "jhon doe",
@@ -102,9 +107,10 @@ const tours = [
     title: "Cherry Blossoms Spring",
     city: "Japan",
     distance: 500,
+    address:"JAP-Address",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto adipisci quidem possimus eos impedit amet voluptatem quisquam iste sed voluptatibus quae ad eum numquam, aspernatur eaque! Esse ad repellat quae!",
     reviews: [],
     avgRating: 4.5,
     photo: tourImg06,
@@ -115,9 +121,10 @@ const tours = [
     title: "Holmen Lofoten",
     city: "France",
     distance: 500,
+    address:"FRA-Address",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto adipisci quidem possimus eos impedit amet voluptatem quisquam iste sed voluptatibus quae ad eum numquam, aspernatur eaque! Esse ad repellat quae!",
     reviews: [],
     avgRating: 0,
     photo: tourImg07,
@@ -125,12 +132,13 @@ const tours = [
   },
   {
     id: "08",
-    title: "Snowy Mountains, Thailand",
-    city: "Thailand",
+    title: "Snowy Mountains, Arob",
+    city: "Arob",
     distance: 500,
+    address:"Arob Address",
     price: 99,
     maxGroupSize: 8,
-    desc: "this is the description",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto adipisci quidem possimus eos impedit amet voluptatem quisquam iste sed voluptatibus quae ad eum numquam, aspernatur eaque! Esse ad repellat quae!",
     reviews: [
       {
         name: "jhon doe",
