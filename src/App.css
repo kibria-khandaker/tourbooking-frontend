@@ -79,9 +79,30 @@ ul {
   width: max-content;
   padding: 0px 0.5rem;
   padding-right: 1rem;
-
   border-radius: 50px;
   font-weight: 500;
   font-size: 1.7rem;
   color: var(--heading-color);
+}
+
+/* ============ responsive css ============== */
+@media only screen and (max-width: 992px) {
+
+  .primary__btn a,
+  .secondary__btn a {
+    font-size: 0.9rem;
+  }
+  .primary__btn,
+  .secondary__btn,
+  .btn-dark {
+    padding: 0.2rem 1.1rem;
+  }
+  section{padding: 40px 0;}
+}
+
+
+@media only screen and (max-width:768px){
+
+  .section__subtitle{font-size: 1.3rem;}
+
 }

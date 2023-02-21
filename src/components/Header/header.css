@@ -73,3 +73,12 @@
     display: block;
   }
 }
+
+@media only screen and (max-width:768px){
+  .logo img{
+    width: 35% !important;
+  }
+  .menu{
+    width:calc(100% - 50%) ;
+  }
+}
