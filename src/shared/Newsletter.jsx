@@ -6,7 +6,7 @@ import maleTourist from "../assets/images/male-tourist.png";
 
 const Newsletter = () => {
   return (
-    <section className="newsletter">
+    <section className="Newsletter__component newsletter">
       <Container>
         <Row>
           <Col lg="6">

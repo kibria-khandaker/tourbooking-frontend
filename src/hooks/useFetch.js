@@ -13,7 +13,7 @@ const useFetch = (url) => {
             try {
                 const res = await fetch(url);
                 if (!res.ok) {
-                    setError('failed to fetch');
+                    setError('failed to fetch from DB');
                     // alert("failed to fetch");
                 }
                 const result = await res.json();

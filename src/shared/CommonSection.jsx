@@ -4,7 +4,7 @@ import "./common-section.css";
 import { Col, Container, Row } from "reactstrap";
 const CommonSection = ({ title }) => {
   return (
-    <section className="common__section">
+    <section className="commonSection__component common__section ">
       <Container>
         <Row>
           <Col lg="12">

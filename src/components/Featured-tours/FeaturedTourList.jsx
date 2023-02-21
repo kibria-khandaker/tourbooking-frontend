@@ -18,7 +18,7 @@ const FeaturedTourList = () => {
   return (
     <>
       {loading && <h4 className=" text-center pt-5"> Loading ....... </h4>}
-      {error && <h4 className=" text-center pt-5"> {error} </h4>}
+      {error && <h6 className=" text-center pt-5 text-danger"> {error} or Server API not working for Featured Tour List! </h6>}
 
       {!loading &&
         !error &&

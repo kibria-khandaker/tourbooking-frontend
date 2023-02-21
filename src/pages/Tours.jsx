@@ -27,17 +27,17 @@ const Tours = () => {
   return (
     <>
       <CommonSection title={"All Tours"} />
-      <section>
+      <section className="searchbar__section-tour">
         <Container>
           <Row>
             <SearchBar />
           </Row>
         </Container>
       </section>
-      <section className="pt-0">
+      <section className="tourcard__section-tour pt-0">
         <Container>
           {loading && <h4 className=" text-center pt-5"> Loading ....... </h4>}
-          {error && <h4 className=" text-center pt-5"> {error} </h4>}
+          {error && <h5 className=" text-center text-danger pt-5"> {error} or Server API not working for Tour List!  </h5>}
 
           {!loading && !error && (
             <Row>

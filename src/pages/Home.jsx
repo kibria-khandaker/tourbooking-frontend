@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <>
       {/* --------------- hero section start ---------------   */}
-      <section>
+      <section className="hero__section-home">
         <Container>
           <Row>
             <Col lg="6">
@@ -61,7 +61,7 @@ const Home = () => {
       </section>
       {/* --------------- hero section end ---------------   */}
 
-      <section>
+      <section className="service__section-home" >
         <Container>
           <Row>
             <Col lg="3">
@@ -74,7 +74,7 @@ const Home = () => {
       </section>
 
       {/* --------------- featured tour section start  --------------- */}
-      <section>
+      <section  className="featured__section-home">
         <Container>
           <Row>
             <Col lg="12" className="mb-5">
@@ -88,7 +88,7 @@ const Home = () => {
       {/* --------------- featured tour section end  --------------- */}
 
       {/* --------------- Experience section start  --------------- */}
-      <section>
+      <section className="featured__section-home">
         <Container>
           <Row>
             <Col lg="6">
@@ -130,7 +130,7 @@ const Home = () => {
       {/* --------------- Experience section end  --------------- */}
 
       {/* --------------- Gallery section Start  --------------- */}
-      <section>
+      <section className="gallery__section-home">
         <Container>
           <Row>
             <Col lg="12">
@@ -148,7 +148,7 @@ const Home = () => {
       {/* --------------- Gallery section End  --------------- */}
 
       {/* --------------- Testimonial section Start  --------------- */}
-      <section>
+      <section className="testimonial__section-home">
         <Container>
           <Row>
             <Col lg="12">
