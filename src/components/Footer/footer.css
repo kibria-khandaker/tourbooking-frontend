@@ -11,7 +11,7 @@
 }
 .social__links span a {
   text-decoration: none;
-  color: var(--heading-color);
+  color: var(--icon-color);
   font-size: 1.2rem;
 }
 .footer__link-title {
@@ -24,7 +24,7 @@
   font-size: 1rem;
 }
 .footer__quick-links h6 span i {
-  color: var(--secondary-color);
+  color: var(--icon-color);
   font-size: 1.1rem;
 }
 .copyRight {

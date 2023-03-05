@@ -74,8 +74,7 @@ const Header = () => {
                         navClass.isActive ? "active__link" : ""
                       }
                     >
-                      {" "}
-                      {item.display}{" "}
+                      {item.display}
                     </NavLink>
                   </li>
                 ))}

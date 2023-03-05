@@ -55,6 +55,8 @@ const Home = () => {
                 <img src={heroImg02} alt="" />
               </div>
             </Col>
+          </Row>
+          <Row>
             <SearchBar />
           </Row>
         </Container>

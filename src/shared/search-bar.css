@@ -7,10 +7,13 @@
 }
 .form__group span {
   font-size: 1.8rem;
-  color: #ee6e6e;
+  /* color: #ee6e6e; */
+  color: var(--icon-color);
 }
 .form__group input {
   border: none;
+  border-top: 1px solid #ddd;
+  padding: 5px 0px;
   font-size: 0.9rem;
   color: var(--heading-color);
   font-weight: 500;
@@ -22,12 +25,12 @@
 .form__group h6 {
   margin-bottom: 0;
 }
-.form__group-fast {
-  border-right: 2px solid #ddd;
+.search__icon {
+  margin-top: 0.5rem;
 }
 .search__icon i {
   font-size: 1.6rem;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   background: var(--secondary-color);
   color: #fff;
   border-radius: 10px 5px 10px 5px;
@@ -45,6 +48,7 @@
   }
   .form__group input{
     font-size: 0.7rem;
+    width: 100%;
   }  
   .form__group span i{
     font-size: 1.1rem;
@@ -53,9 +57,9 @@
     font-size: 1rem;
   }
 
-
   .search__bar form, .form__group{
-    width: 60%;
+    width: 100%;
+    margin: auto;
   }
 
 }

@@ -30,14 +30,13 @@ const SearchBar = () => {
   };
 
   return (
-    <Col lg="12">
-      <div className="search__bar">
-        <Form className="d-flex align-content-center gap-4">
-          <FormGroup className="d-flex gap-3 form__group form__group-fast">
+    <Col className="search__bar py-5 py-lg-3">
+        <Form className="d-flex align-content-center gap-4 justify-content-evenly mt-3">
+          <FormGroup className="d-flex gap-3 form__group ">
             <span>
               <i className="ri-map-pin-line"></i>
             </span>
-            <div>
+            <div className="w-100">
               <h6>Location</h6>
               <input
                 type="text"
@@ -46,11 +45,11 @@ const SearchBar = () => {
               />
             </div>
           </FormGroup>
-          <FormGroup className="d-flex gap-3 form__group form__group-fast">
+          <FormGroup className="d-flex gap-3 form__group ">
             <span>
               <i className="ri-map-pin-time-line"></i>
             </span>
-            <div>
+            <div className="w-100">
               <h6>Distance</h6>
               <input
                 type="number"
@@ -59,11 +58,11 @@ const SearchBar = () => {
               />
             </div>
           </FormGroup>
-          <FormGroup className="d-flex gap-3 form__group form__group-last">
+          <FormGroup className="d-flex gap-3 form__group ">
             <span>
               <i className="ri-group-line"></i>
             </span>
-            <div>
+            <div className="w-100">
               <h6>Max People</h6>
               <input
                 type="number"
@@ -76,7 +75,6 @@ const SearchBar = () => {
             <i className="ri-search-line"></i>
           </span>
         </Form>
-      </div>
     </Col>
   );
 };

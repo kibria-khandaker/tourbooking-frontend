@@ -10,6 +10,7 @@ import TourCard from "./../shared/TourCard";
 import "../styles/tour.css";
 import useFetch from "./../hooks/useFetch";
 import { BASE_URL } from "./../utils/config";
+import { LoadingText } from './../shared/LoadingText';
 
 const Tours = () => {
   const [pageCount, setPageCount] = useState(0);
@@ -36,8 +37,8 @@ const Tours = () => {
       </section>
       <section className="tourcard__section-tour pt-0">
         <Container>
-          {loading && <h4 className=" text-center pt-5"> Loading ....... </h4>}
-          {error && <h5 className=" text-center text-danger pt-5"> {error} or Server API not working for Tour List!  </h5>}
+          {loading && <h4 className=" text-center pt-5"> <LoadingText /> </h4>}
+          {error && <h5 className=" text-center text-danger pt-5"> {error} or Server API not working!  </h5>}
 
           {!loading && !error && (
             <Row>

@@ -5,6 +5,7 @@ import TourCard from "./../../shared/TourCard";
 
 import useFetch from "./../../hooks/useFetch";
 import { BASE_URL } from "./../../utils/config";
+import { LoadingText } from './../../shared/LoadingText';
 
 const FeaturedTourList = () => {
   const {
@@ -17,8 +18,8 @@ const FeaturedTourList = () => {
 
   return (
     <>
-      {loading && <h4 className=" text-center pt-5"> Loading ....... </h4>}
-      {error && <h6 className=" text-center pt-5 text-danger"> {error} or Server API not working for Featured Tour List! </h6>}
+      {loading && <h4 className=" text-center pt-5"> <LoadingText /> </h4>}
+      {error && <h6 className=" text-center pt-5 text-danger"> {error} or Server API not working for Featured! </h6>}
 
       {!loading &&
         !error &&

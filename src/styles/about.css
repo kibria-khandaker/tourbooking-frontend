@@ -1,0 +1,11 @@
+.about__content h1 {
+  color: var(--heading-color);
+  font-size: 2.2rem;
+}
+
+.about__content p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}

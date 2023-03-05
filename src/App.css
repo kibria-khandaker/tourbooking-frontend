@@ -2,12 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --primary-color: #ff7e01; /*rgb(0, 204, 44) ;   #ff7e01 */
-  --secondary-color: #faa935; /* #2ee19e; #faa935 */
+  /*--primary-color: #ff7e01;  -rgb(0, 204, 44) ;   #ff7e01 */
+  /*--secondary-color: #faa935;  -#2ee19e; #faa935 */
+  
+  --primary-color: #E487AF; /*rgb(0, 204, 44) ; #ff7e01  #E487AF*/
+  --secondary-color: #27ACB3; /* #2ee19e;  #faa935 #27ACB3 */
+
   --heading-color: #0b2727;
   --text-color: #6e7074;
   --font-name: "Montserrat", sans-serif;
   --subtitle-font-name: "Island Moments", cursive;
+  --icon-color:var(--primary-color)
 }
 
 * {
@@ -81,8 +86,8 @@ ul {
   padding-right: 1rem;
   border-radius: 50px;
   font-weight: 500;
-  font-size: 1.7rem;
-  color: var(--heading-color);
+  font-size: 1.9rem;
+  color: #ffffff;
 }
 
 /* ============ responsive css ============== */
