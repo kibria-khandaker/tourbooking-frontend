@@ -19,10 +19,6 @@ const TourDetails = () => {
   const [tourRating, setTourRating] = useState(null);
   const { user } = useContext(AuthContext);
 
-  // const tour = tourData.find((tour) => tour.id == id);
-  // const { data: tour, loading, error } = useFetch(`${BASE_URL}/tours/${id}`);
-  // const { data: tourCount } = useFetch(`${BASE_URL}/tours/search/getTourCount`);
-
   const { data: tour, loading, error } = useFetch(`${BASE_URL}/tours/${id}`);
 
   const {

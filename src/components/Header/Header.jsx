@@ -32,6 +32,11 @@ const Header = () => {
     navigate("/");
   };
 
+  const accountPage=()=>{
+    navigate("/account");
+
+  }
+
   const stickyHeaderFunc = () => {
     window.addEventListener("scroll", () => {
       if (
@@ -50,7 +55,7 @@ const Header = () => {
     return window.removeEventListener("scroll", stickyHeaderFunc);
   });
 
-  const toggleMenu =()=> menuRef.current.classList.toggle('show__menu')
+  const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
 
   return (
     <header className="header" ref={headerRef}>
@@ -64,7 +69,7 @@ const Header = () => {
             {/* ---------------- Logo end ---------------- */}
 
             {/* ---------------- Menu start ---------------- */}
-            <div className="navigation" ref={menuRef} onClick={toggleMenu} >
+            <div className="navigation" ref={menuRef} onClick={toggleMenu}>
               <ul className="menu d-flex align-items-center gap-5">
                 {nav__links.map((item, index) => (
                   <li className="nav__item" key={index}>
@@ -86,7 +91,10 @@ const Header = () => {
               <div className=" nav__btns d-flex align-content-center gap-4">
                 {user ? (
                   <>
-                    <h5 className="mb-0 mt-2">{user.username}</h5>
+                    <Button className="btn btn-light loginUserBox" onClick={accountPage}>
+                      <span className="loginUserIcon"><i className="ri-group-line"></i></span>
+                      <span className="loginUserName"> {user.username} </span>
+                    </Button>
                     <Button className="btn btn-dark" onClick={logout}>
                       Logout
                     </Button>
@@ -102,7 +110,7 @@ const Header = () => {
                   </>
                 )}
               </div>
-              <span className=" mobile__menu"  onClick={toggleMenu}>
+              <span className=" mobile__menu" onClick={toggleMenu}>
                 <i className="ri-menu-line"></i>
               </span>
             </div>

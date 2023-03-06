@@ -59,7 +59,7 @@ const SearchBar = () => {
             </div>
           </FormGroup>
           <FormGroup className="d-flex gap-3 form__group ">
-            <span>
+            <span className="loginUserIcon">
               <i className="ri-group-line"></i>
             </span>
             <div className="w-100">
