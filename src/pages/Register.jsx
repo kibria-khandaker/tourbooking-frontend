@@ -97,7 +97,6 @@ const Register = () => {
                   </Button>
                 </Form>
                 <p>
-                  {" "}
                   Already have Account <Link to="/login">Login</Link>{" "}
                 </p>
               </div>

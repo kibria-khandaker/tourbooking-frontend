@@ -39,7 +39,8 @@ const Booking = ({ tour, avgRating }) => {
 
     try {
       if (!user || user === undefined || user === null) {
-        return alert("PLase Sign in");
+        alert("Please Need to login for Booking");          
+        return navigate("/login");
       }
 
       const res = await fetch(`${BASE_URL}/booking`, {
