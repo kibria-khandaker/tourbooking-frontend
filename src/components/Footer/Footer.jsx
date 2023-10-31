@@ -43,7 +43,7 @@ const Footer = () => {
         <Row>
           <Col lg="3">
             <div className="logo">
-              <img src={logo} alt="" />
+              <Link to="/"> <img src={logo} alt="logo" /></Link>   
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Provident, nisi.
