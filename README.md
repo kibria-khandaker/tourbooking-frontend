@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+### `Live Link`
+
+Project live link (https://tourbooking-frontend.web.app):  [Project Live Link](https://tourbooking-frontend.web.app) 
+
+Project live link (https://tourbooking-frontend.firebaseapp.com/):  [Project Live Link](https://tourbooking-frontend.firebaseapp.com/) 
+
+
 ### `My Uses Packages`
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -18,9 +26,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
 
-
-### `Live Link`
-Project live link :  [Project Live Link](https://tourbooking-frontend.web.app) 
 
 
 ### `npm start`
