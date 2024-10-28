@@ -1,13 +1,12 @@
 ## Tourbooking Frontend React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-
 ### `Live Link`
 
-Project live link (https://tourbooking-frontend.web.app):  [Project Live Link](https://tourbooking-frontend.web.app) 
+* Project live link (https://tourbooking-frontend.web.app):  [Project Live Link](https://tourbooking-frontend.web.app) 
 
-Project live link (https://tourbooking-frontend.firebaseapp.com/):  [Project Live Link](https://tourbooking-frontend.firebaseapp.com/) 
+ | or |
+
+* Project live link (https://tourbooking-frontend.firebaseapp.com/):  [Project Live Link](https://tourbooking-frontend.firebaseapp.com/) 
 
 
 ### `Backend Server Code's Repository Link`  
